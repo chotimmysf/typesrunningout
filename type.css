@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #84a3f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Anton", "Verdana", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  font-size: 32px;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+select {
+  width: 200px;
+  padding: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  background-color: #ad9fff;
+  border-style: none;
+  border-radius: 100px;
+}
+
+.settings-btn {
+  position: absolute;
+  left: 30px;
+}
+
+.settings {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #6ca3f5;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.settings.hide {
+  transform: translateY(-100%);
+}
+
+.container {
+  background-color: #7591ff;
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  font-size: 30px;
+  color: #000;
+  position: relative;
+  text-align: center;
+  width: 1500px;
+  height: 600px;
+  overflow: hidden;
+}
+
+input {
+  border-style: none;
+  border-radius: 26px;
+  font-size: 30px;
+  width: 400px;
+  height: 80px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.score-container {
+  position: absolute;
+  color: #5e15d3;
+}
+
+.time-container {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+}
+
+h2 {
+  position: absolute;
+  padding: 2x0px;
+  margin-right: 20px;
+}
+
+.end-game-container {
+  background-color: inherit;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#typeprompt {
+  visibility: hidden;
+}

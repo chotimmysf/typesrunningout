@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type's Running Out</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="type.css">
+</head>
+<body>
+    <button id="settings-btn" class='settings-btn'>
+        <i class="fas fa-cog"></i>
+    </button>
+    <div id="settings" class="settings">
+        <form id="settings-form">
+            <div class="level">Choose a level:
+                <select id="level">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                    <option value="insane">Insane</option>
+                    <option value="thebaddest">"I'm Dead"</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <h2>Type before you run out of time!</h2>
+        <p id="typeprompt">Type the following:</p>
+
+        <h1 id="word"></h1>
+
+        <input type="text" id="text" autocomplete="off" placeholder="Type the word. はやく!!">
+
+        <p class="time-container">
+            Keep typing! You have <span id="time">10</span> seconds left!
+        </p>
+
+        <p class="score-container">
+            Score: <span id="score">0</span>
+        </p>
+
+        <div id="end-game-container" class="end-game-container"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
