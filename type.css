@@ -21,6 +21,10 @@ button {
   padding: 10px 15px;
 }
 
+#word {
+  padding: 10px;
+}
+
 select {
   width: 200px;
   padding: 10px;
@@ -66,7 +70,7 @@ select {
   position: relative;
   text-align: center;
   width: 1500px;
-  height: 600px;
+  height: 750px;
   overflow: hidden;
 }
 
@@ -77,13 +81,14 @@ input {
   width: 400px;
   height: 80px;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .score-container {
   position: absolute;
   color: #5e15d3;
+  visibility: visible;
 }
 
 .time-container {
@@ -94,7 +99,7 @@ input {
 
 h2 {
   position: absolute;
-  padding: 2x0px;
+  padding: 10px;
   margin-right: 20px;
 }
 
@@ -110,8 +115,4 @@ h2 {
   width: 100%;
   height: 100%;
   z-index: 1;
-}
-
-#typeprompt {
-  visibility: hidden;
 }
