@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
 
 * {
   box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  font-family: "Anton", "Verdana", sans-serif;
+  font-family: "Redressed", "Verdana", cursive, sans-serif;
 }
 
 button {
