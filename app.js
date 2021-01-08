@@ -24,6 +24,14 @@ let score=0;
 let time=30;
 let initialTime=time;
 
+// Init & set level/difficulty to value of medium
+let level = localStorage.getItem('level') !== null ?
+localStorage.getItem('level'): 'medium';
+
+// Set level select value
+levelSelection.value=localStorage.getItem('level') 
+!== null ? localStorage.getItem('level'):'medium';
+
 // Focus on text on start
 text.focus();
 
@@ -88,10 +96,27 @@ text.addEventListener('input', e => {
         // Clear previous word
         e.target.value = '';
 
-        time += 2.5;
+        if(level === 'easy') {
+            time+=3;
+        } else if (level === 'medium') {
+            time+=1.5;
+        } else if (level === 'hard') {
+            time+=1;
+        } else if (level === 'insane') {
+            time+=0.5
+        }
+
         updateTime();
         Math.floor(time);
     }
 })
 
 // Settings btn click
+settingsBtn.addEventListener('click', () => settings.classList.toggle('hide'));
+
+// Settings select
+settingsForm.addEventListener('change', e => {
+    level = e.target.value;
+    console.log(level);
+    localStorage.setItem('level', level);
+})
